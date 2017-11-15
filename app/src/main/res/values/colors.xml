@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //Main Colours
+    <color name="colorPrimary">#9ccc65</color>
+    <color name="colorPrimaryDark">#6b9b37</color>
+    <color name="colorAccent">#ffffff</color>
+
+    //Main Background //#26ae90
+    <color name="mainBackground">#8bc34a</color>
+
+
+
+//Text Box Colours
+    <color name="inputText">#ffffff</color>
+    <color name="inputTextTint">#ffffff</color>
+    <color name="inputTextHint">#ffffff</color>
+    <color name="textview">#ffffff</color>
+
+//Button Colours
+
+    <color name="mainButtonText">#ffffff</color>
+    <color name="mainButtonBackground">#9ccc65</color>
+    <color name="buttonText">#9ccc65</color>
+    <color name="logoutButtonBackground">#b30003</color>
+
+
+
+
+    //Order list text colour
+    <color name="orderListText">#000000</color>
+</resources>

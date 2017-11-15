@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nz.uict.a2037689.tuckbox.CreditCard"
+    android:orientation="vertical"
+    android:background="@color/mainBackground">
+
+    <TextView
+        android:id="@+id/creditInstruct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/creditInstruct"
+        android:textColor="@color/inputText"
+        android:backgroundTint="@color/mainBackground"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="18sp"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/etCreditCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColorHint="@color/inputText"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <EditText
+            android:id="@+id/etEnterCreditCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/inputTextTint"
+            android:hint="@string/creditcard"
+            android:textColor="@color/inputText"
+            android:layout_gravity="center_horizontal"
+            android:inputType="numberDecimal"
+            android:maxLength="19"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spExpiryMonth"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:hint="@string/expiryMonth"
+        app:met_floatingLabel="normal"
+        app:met_textColorHint="@color/inputText"
+        app:met_textColor="@color/inputText"
+        app:met_floatingLabelTextColor="@color/inputText"
+        />
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spExpiryYear"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:hint="@string/expiryYear"
+        app:met_floatingLabel="normal"
+        app:met_textColorHint="@color/inputText"
+        app:met_textColor="@color/inputText"
+        app:met_floatingLabelTextColor="@color/inputText"
+
+        />
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/creditCardCVV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColorHint="@color/inputText"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <EditText
+            android:id="@+id/etCreditCVV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/inputTextTint"
+            android:hint="@string/csv"
+            android:textColor="@color/inputText"
+            android:layout_gravity="center_horizontal"
+            android:inputType="numberDecimal"
+            android:maxLength="3"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnCreditContinue"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="@string/btncontinue"
+        android:backgroundTint="@color/mainButtonBackground"
+        android:textColor="@color/mainButtonText"
+        android:layout_gravity="center"
+        android:onClick="onClickValidateCC"
+        android:layout_marginTop="60dp"
+        />
+
+</LinearLayout>

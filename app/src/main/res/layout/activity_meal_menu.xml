@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nz.uict.a2037689.tuckbox.MealMenu"
+    android:background="@color/mainBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardBeefNoodle"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardUseCompatPadding="true"
+        android:onClick="onFirstClick">
+
+
+
+
+            <ImageView
+                android:id="@+id/cardBeefNoodleImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/beefnoodlesaladsmall"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:id="@+id/cardBeefNoodleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/beefnoodle"
+                android:textColor="@color/inputText"
+                android:background="#50000000"
+                android:padding="5dp"
+                />
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardGreenSalad"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardUseCompatPadding="true"
+        android:onClick="onSecondClick"
+        >
+
+        <ImageView
+            android:id="@+id/cardGreenSaladImage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/greensaladsmall"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/cardGreenSaladText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/greensalad"
+            android:textColor="@color/inputText"
+            android:background="#50000000"
+            android:padding="5dp"
+            />
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardLambKorma"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        card_view:cardCornerRadius="4dp"
+            card_view:cardUseCompatPadding="true"
+            android:onClick="onThirdClick">
+
+        <ImageView
+            android:id="@+id/cardLambKormaImage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/lambkormasmall"
+            android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/cardLambKormaText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lambkorma"
+                android:textColor="@color/inputText"
+                android:background="#50000000"
+                android:padding="5dp"
+                />
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardOpenChickenSand"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardUseCompatPadding="true"
+        android:onClick="onFourthClick">
+
+        <ImageView
+            android:id="@+id/cardOpenChickenSandImage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/openchickensandwhichsmall"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/cardOpenChickenSandText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/openchicken"
+            android:textColor="@color/inputText"
+            android:background="#50000000"
+            android:padding="5dp"
+            />
+    </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>

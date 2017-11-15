@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">TuckBox</string>
+
+
+    <!--Sign In Form-->
+    <string name="username">Email / Username</string>
+    <string name="password">Password</string>
+    <string name="forgotpassword">Forgot Password?</string>
+
+
+    <!--FireBase-->
+    <string name="auth_failed">Incorrect username/password</string>
+
+
+    <!--Address Form-->
+    <string name="streetname">Street Number/Name</string>
+    <string name="suburb">Suburb</string>
+    <string name="town">Location</string>
+    <array name="locations">
+        <item>Palmerston North</item>
+        <item>Fielding</item>
+        <item>Ashhurst</item>
+        <item>Longburn</item>
+    </array>
+
+    <!--CreditCard-->
+    <string name="creditInstruct">Please enter your credit card details</string>
+    <string name="creditcard">Credit Card Number</string>
+    <string name="expiryMonth">Month</string>
+    <string name="expiryYear">Year</string>
+    <string name="csv">CVV</string>
+
+    <!--Time/Date-->
+    <string name="time">Delivery Time</string>
+    <string name="date">Delivery Date</string>
+    <array name="timewindows">
+        <item>11.45 - 12.15</item>
+        <item>12.15 - 12.45</item>
+        <item>12.45 - 1.15</item>
+        <item>1.15 - 1.45</item>
+    </array>
+
+    <!--Buttons-->
+    <string name="signupbuttons">Sign Up</string>
+    <string name="signin">Sign In</string>
+    <string name="btncontinue">Continue</string>
+    <string name="mainmenu">Main Menu</string>
+
+
+    <!--Menu Strings-->
+    <string name="beefnoodle">Beef Noodle Salad</string>
+    <string name="greensalad">Green Salad</string>
+    <string name="lambkorma">Lamb Korma</string>
+    <string name="openchicken">Open Chicken Sandwhich</string>
+
+
+    <!--Meal Options-->
+    <string name="beefnoodleoptionone">No Chilli Flakes</string>
+    <string name="beefnoodleoptiontwo">Extra Chilli Flakes</string>
+
+    <string name="greensaladoptionone">No Dressing</string>
+    <string name="greensaladoptiontwo">Ranch Dressing</string>
+    <string name="greensaladoptionthree">Vinaigrette</string>
+
+    <string name="openchickenoptionone">White</string>
+    <string name="openchickenoptiontwo">Rye</string>
+    <string name="openchickenoptionthree">Wholemeal</string>
+
+    <string name="lambkormaoptionone">Mild</string>
+    <string name="lambkormaoptiontwo">Medium</string>
+    <string name="lambkormaoptionthree">Hot</string>
+
+    <!--Dialog Titles-->
+    <string name="beefnoodledialogtitle">Chilli flakes</string>
+    <string name="greensaladdialogtitle">Dressing</string>
+    <string name="lambkormadialogtitle">Intensity</string>
+    <string name="openchickendialogtitle">Choose your bread</string>
+
+
+    <!--Confirmation-->
+    <string name="confirmationtitle">Order Confirmation</string>
+    <string name="timetitle">Time of Delivery:</string>
+    <string name="datetitle">Date of Delivery:</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="confirmed">Order placed!\n\nThank you for ordering with TuckBox!</string>
+
+
+
+    <!--Google API-->
+    <string name="google_places_key" >AIzaSyAltrw9vyguDDYPxK-H5X0dbNYTj84MdUI</string>
+
+
+</resources>

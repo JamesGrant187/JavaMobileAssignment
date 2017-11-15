@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nz.uict.a2037689.tuckbox.Confirmation"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/tvConfirmation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmationtitle"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="44dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/tvTimeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/timetitle"
+        android:paddingBottom="5dp"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/tvTimeShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tvDateTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/datetitle"
+        android:paddingBottom="5dp"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/tvDateShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:paddingBottom="10dp"
+        />
+
+    <ListView
+        android:id="@+id/lvOrders"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="0.04" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="@string/confirm"
+        android:backgroundTint="@color/mainButtonBackground"
+        android:textColor="@color/mainButtonText"
+        android:layout_gravity="center"
+        android:onClick="confirmOnClick"
+        />
+
+
+</LinearLayout>
+

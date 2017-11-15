@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nz.uict.a2037689.tuckbox.Time"
+    android:orientation="vertical"
+    android:background="@color/mainBackground">
+
+
+    <TextView
+        android:id="@+id/tvSelectDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please select a delivery window"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/textview"
+        android:padding="5dp"
+        android:layout_margin="20dp"/>
+    <TextView
+        android:id="@+id/tvCurrentDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orders cannot be made after 10AM \nfor the current day"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/textview"
+        android:padding="5dp" />
+
+
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spTimeWindow"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="@string/time"
+        app:met_floatingLabel="normal"
+        app:met_textColorHint="@color/inputText"
+        app:met_textColor="@color/inputText"
+        app:met_floatingLabelTextColor="@color/inputText"
+        android:layout_margin="20dp"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/widPickDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColorHint="@color/inputText"
+        android:layout_margin="20dp"
+        >
+
+        <EditText
+            android:id="@+id/etPickDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/inputTextTint"
+            android:hint="@string/date"
+            android:textColor="@color/inputText"
+            android:layout_gravity="center_horizontal"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:focusable="false"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnTimeContinue"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="@string/btncontinue"
+        android:backgroundTint="@color/mainButtonBackground"
+        android:textColor="@color/mainButtonText"
+        android:layout_gravity="center"
+        android:onClick="onClickTimeContinue"
+        android:layout_marginTop="40dp"
+        />
+
+
+</LinearLayout>
